@@ -323,3 +323,66 @@ footer {
     opacity: 1;
   }
 }
+
+/* Mobile: Bottom dock */
+@media (max-width: 768px) {
+  .sidebar-dock {
+    left: 50%;
+    top: auto;
+    bottom: 15px;
+    transform: translateX(-50%);
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  .dock-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dock-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dock-icon:hover {
+    transform: scale(1.2) translateY(-3px);
+  }
+
+  /* Adjust tooltip for bottom dock */
+  .dock-icon::after {
+    left: 50%;
+    bottom: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  .dock-icon:hover::after {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .dock-icon::before {
+    left: 50%;
+    bottom: 100%;
+    margin-left: -6px;
+    margin-bottom: 4px;
+    border-right-color: transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(10px);
+  }
+
+  .dock-icon:hover::before {
+    transform: translateY(0);
+  }
+}
+
+/* Tablet and Desktop: Side dock */
+@media (min-width: 769px) {
+  .sidebar-dock {
+    display: flex;
+  }
+}
