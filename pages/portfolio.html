@@ -83,7 +83,7 @@
     <!-- Main Content -->
     <div class="main-content py-5">
       <div class="container-fluid px-4 px-lg-5">
-        <!-- Header Section -->
+        <!-- Header -->
         <div class="row mb-5">
           <div class="col-12">
             <div class="d-flex align-items-center gap-3 mb-4">
@@ -98,21 +98,321 @@
           </div>
         </div>
 
-        <!-- Body -->
-        <div class="row mb-4">
-          <div class="col-12">
-            <div class="custom-card card shadow-lg rounded-4 p-4 text-center">
-              <img
-                src="../assets/comingsoon.svg"
-                alt="Coming Soon Logo"
-                class="logos"
-              />
-              <h3 class="h3 fw-bold mb-3 text-white center-text">
-                Coming Soon<span class="typing-dots"
-                  ><span>.</span><span>.</span><span>.</span></span
-                >
-              </h3>
+        <!-- OVERVIEW SECTION -->
+        <div id="overview">
+          <div class="row g-2">
+            <!-- Project 1 Card -->
+            <div class="col-12 col-md-6 col-lg-6">
+              <div
+                class="custom-card card shadow-lg rounded-4 p-4 text-center"
+                onclick="openProject(
+          'EcoGrade',
+          'https://www.youtube.com/embed/lwbcPk_hogk',
+          `
+          <div class='row mb-4'>
+            <div class='col-12'>
+              <div class='custom-card rounded-4 p-4 p-lg-5'>
+                <div class='row g-4 align-items-start'>
+                  <div class='col-12 col-md'>
+                    <h2 class='h2 fw-bold mb-3'>Overview</h2>
+                    <p class='text-white-50 lh-lg justify-text'>
+                      EcoGrade is an AI-powered waste analysis and segregation system that uses YOLOv11, HSV-based contamination detection, and MCDA to determine whether non-biodegradable materials are suitable for upcycling or downcycling. Running on a Raspberry Pi 5 with a servo-based mechanism, it analyzes one item at a time and automatically sorts it based on quality. EcoGrade aims to improve recycling accuracy, reduce manual sorting, and support more sustainable waste management.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class='row g-4'>
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Main Features</h4>
+                  <p class='text-white-50 lh-base justify-text'>
+                      • AI-Based Waste Identification<br>
+                      • Contamination Detection<br>
+                      • MCDA Quality Scoring<br>
+                      • Real-Time Detection on Raspberry Pi 5<br>
+                      • Automated Waste Segregation Hardware<br>
+                      • Data Storage & Analytics<br>
+                      • GUI for Monitoring<br>
+                      • Single-Item Processing System
+                  </p>
+              </div>
+            </div>
+
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Developers</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  This project was developed by QuadPals as part of their thesis paper.
+                  The team consists of:<br>
+                  Vian - Hardware Engineer & QA Tester<br>
+                  Rakee - Project Manager & Backend Developer<br>
+                  Fraizer - Machine Learning Model Trainer<br>
+                  Adriane - Front-end Developer<br>
+                  Rogin - Documentation 
+                </p>
+              </div>
+            </div>
+          </div>
+          `
+        )"
+              >
+                <img
+                  src="../assets/portfolio/ecograde.png"
+                  class="img-fluid rounded-3"
+                  alt="EcoGrade preview"
+                />
+                <h4 class="h2 fw-bold mt-3 text-white">EcoGrade</h4>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6 col-lg-6">
+              <div
+                class="custom-card card shadow-lg rounded-4 p-4 text-center"
+                onclick="openProject(
+          'Deep See Exploration',
+          'https://www.youtube.com/embed/Buvz6KJM6dU',
+                    `
+          <div class='row mb-4'>
+            <div class='col-12'>
+              <div class='custom-card rounded-4 p-4 p-lg-5'>
+                <div class='row g-4 align-items-start'>
+                  <div class='col-12 col-md'>
+                    <h2 class='h2 fw-bold mb-3'>Overview</h2>
+                    <p class='text-white-50 lh-lg justify-text'>
+                      UnderwaterXplorers is an interactive OpenGL project set in a dynamic underwater environment. The user controls a submarine that moves freely in a 2D ocean scene filled with animated fish, floating bubbles, and colorful corals. The environment responds to user input—corals can change size, the scene can switch between day and night, and various elements move and animate using transformations such as glTranslate, glScale, and glRotate. The project showcases an engaging aquatic ecosystem brought to life through real-time animations and user interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='row g-4'>
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Main Features</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  •	Interactive submarine controlled with keyboard (up, down, left, right)<br>
+                  •	Animated fish moving automatically across the scene<br>
+                  •	Bubbles rising from the ocean floor<br>
+                  •	Colorful corals anchored on the seabed<br>
+                  •	Corals that can grow or shrink using the mouse scroll wheel<br>
+                  •	Rotating coral animations<br>
+                  •	Day–night cycle triggered by mouse click<br>
+                  • Dynamic underwater environment using OpenGL transformations (glTranslate, glScale, glRotate)
+                </p>
+              </div>
+            </div>
+
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Facts & Developers</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  Although the project may appear simple, it was built using OpenGL, a highly sophisticated and low-level graphics programming interface. This served as our final output for our Computer Graphics course during our third year in college.<br><br>
+                  This was accomplished as a group task, the team consists of:<br>
+                  Vian - Lead Programmer<br>
+                  Rakee - Project Leader<br>
+                  Fraizer - QA Tester<br>
+                  Adriane - Documentation<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          `
+        )"
+              >
+                <img
+                  src="../assets/portfolio/xplorers.png"
+                  class="img-fluid rounded-3"
+                  alt="UnderwaterXplorer preview"
+                />
+                <h4 class="h2 fw-bold mt-3 text-white">UnderwaterXplorer</h4>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-12 col-md-6 col-lg-6">
+              <div
+                class="custom-card card shadow-lg rounded-4 p-4 text-center"
+                onclick="openProject(
+          'Lifestream: Blood Donation System',
+          'https://www.youtube.com/embed/6llOG7CJB6M?si=sWVYHZpLECVE5JK-',
+                    `
+          <div class='row mb-4'>
+            <div class='col-12'>
+              <div class='custom-card rounded-4 p-4 p-lg-5'>
+                <div class='row g-4 align-items-start'>
+                  <div class='col-12 col-md'>
+                    <h2 class='h2 fw-bold mb-3'>Overview</h2>
+                    <p class='text-white-50 lh-lg justify-text'>
+                      LifeStream is a PHP-based web Blood Donation and Donor Finder System developed by Vargas, Javier, and Turingan. The platform connects blood donors and recipients through a web application where users can register, manage profiles, donate blood, and search for compatible donors stored in the system’s database. It streamlines the donation process with features such as donor management, recipient search, donation history tracking, and announcement viewing. The admin dashboard, also built in PHP, enables administrators to manage users, coordinate donor–recipient matching based on priority, oversee blood collections, and publish announcements. LifeStream modernizes and simplifies the process of finding and donating blood, making it more efficient and accessible for both users and admins.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='row g-4'>
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Main Features</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  	•	User Registration & Authentication<br>
+                    •	User Profile Management<br>
+                    •	User Dashboard (donate blood, view donation history, find compatible donors/recipients)<br>
+                    •	Add Donor (name, birthdate, blood type, gender; multiple entries supported)<br>
+                    •	Search Recipients<br>
+                    •	View Announcements<br>
+                    •	Donation History Tracking<br>
+                    •	Admin Dashboard<br>
+                    •	Donor Status Management (priority-based + FCFS sequence)<br>
+                    •	Blood Collection Table (edit/delete donor & recipient data)<br>
+                    •	Add Recipients (admin side)<br>
+                    •	Admin Announcements (visible to all users)
+                </p>
+              </div>
+            </div>
+
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-left'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Facts & Developers</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  This was our first web-based project, built using PHP for the backend and HTML, CSS, and JavaScript for the frontend. It served as our group’s introduction to developing a full-featured web application with user management, database integration, and interactive system functionalities.<br><br>
+
+                  The project was developed by a team of three members:<br>
+                  Vian - Frontend Developer<br>
+                  Jethro - UI/UX & Documentation<br>
+                  Fraizer - Backend Developer
+                </p>
+              </div>
+            </div>
+          </div>
+          `
+        )"
+              >
+                <img
+                  src="../assets/portfolio/lifestream.png"
+                  class="img-fluid rounded-3"
+                  alt="Lifestream preview"
+                />
+                <h4 class="h2 fw-bold mt-3 text-white">Lifestream</h4>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-12 col-md-6 col-lg-6">
+              <div
+                class="custom-card card shadow-lg rounded-4 p-4 text-center"
+                onclick="openProjectImages(
+                'Greenville Portal',
+                [
+                  '../assets/portfolio/img1.png',
+                  '../assets/portfolio/img2.png',
+                  '../assets/portfolio/img3.png'
+                ],
+                          `
+          <div class='row mb-4'>
+            <div class='col-12'>
+              <div class='custom-card rounded-4 p-4 p-lg-5'>
+                <div class='row g-4 align-items-start'>
+                  <div class='col-12 col-md'>
+                    <h2 class='h2 fw-bold mb-3'>Overview</h2>
+                    <p class='text-white-50 lh-lg justify-text'>
+                      This project is a School Enrollment System that includes user registration, authentication, enrollment, and management functionalities. It was developed under a startup company, Deep Dynamix Incorporated and the production and deployment phases are still in progress.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='row g-4'>
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-center'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Main Features</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  An Enrollment System built for a real client, allowing students to register for their courses online, while administrators can manage and monitor registrations seamlessly.<br><br>
+                  •	Student Registration & Authentication<br>
+                  •	Course Enrollment & Scheduling<br>
+                  •	Student Profile Management<br>
+                  •	Administrator Dashboard for managing courses, students, and registrations<br>
+                  •	Real-Time Enrollment Monitoring<br>
+                </p>
+              </div>
+            </div>
+
+            <div class='col-12 col-md-6 col-lg-6'>
+              <div class='custom-card card shadow-lg rounded-4 p-4 text-center'>
+                <h4 class='h4 fw-bold mb-2 text-white'>Developers</h4>
+                <p class='text-white-50 lh-base justify-text'>
+                  The team is divided into two sections and consists of:<br><br>
+                  Frontend Team:<br>
+                  Vian - Lead Frontend Developer<br>
+                  Marnel - UI/UX Designer<br>
+                  Fraizer - QA Tester<br><br>
+                  Backend Team:<br>
+                  Mychal - Lead Backend Developer<br>
+                  Ralph - Database Administrator<br>
+                  Rakee - API Integrator<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          `
+              )"
+              >
+                <img
+                  src="../assets/portfolio/greenville.png"
+                  class="img-fluid rounded-3"
+                  alt="Greenville Portal preview"
+                />
+                <h4 class="h2 fw-bold mt-3 text-white">Greenville Portal</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL PROJECT DETAILS (hidden by default) -->
+        <div id="project-details" style="display: none">
+          <button class="btn btn-secondary mb-3" onclick="goBack()">
+            ← Back to Projects
+          </button>
+          <div id="details-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Images Modal -->
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="projectModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="projectTitle">Project Title</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="projectMedia">
+              <!-- Images will be inserted here -->
+            </div>
+            <p class="mt-3" id="projectDesc">
+              Project description will appear here.
+            </p>
           </div>
         </div>
       </div>
@@ -135,6 +435,64 @@
         document.write(
           '<script src="../assets/bootstrap/bootstrap.bundle.min.js"><\/script>'
         );
+      }
+    </script>
+
+    <!-- SPA Logic -->
+    <script>
+      function openProject(title, youtubeUrl, description) {
+        document.getElementById("overview").style.display = "none";
+        document.getElementById("project-details").style.display = "block";
+
+        document.getElementById("details-content").innerHTML = `
+      <h1 class="fw-bold text-white mb-4">${title}</h1>
+      <div class="ratio ratio-16x9 mb-4">
+        <iframe 
+          src="${youtubeUrl}" 
+          title="${title}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          class="rounded-3">
+        </iframe>
+      </div>
+      <p class="text-white-50 lh-base">${description}</p>
+    `;
+      }
+
+      function openProjectImages(title, images, description) {
+        document.getElementById("overview").style.display = "none";
+        document.getElementById("project-details").style.display = "block";
+
+        // Create image gallery HTML
+        const imagesHTML = images
+          .map(
+            (img) => `
+        <div class="col-12 mb-4">
+          <img src="${img}" class="img-fluid rounded-3 shadow" alt="${title}" />
+        </div>
+      `
+          )
+          .join("");
+
+        document.getElementById("details-content").innerHTML = `
+        <h1 class="fw-bold text-white mb-4">${title}</h1>
+        <div class="row">
+          ${imagesHTML}
+        </div>
+        <p class="text-white-50 lh-base mt-4">${description}</p>
+      `;
+      }
+
+      function goBack() {
+        // Stop any playing videos by clearing iframe sources
+        const iframes = document.querySelectorAll("iframe");
+        iframes.forEach((iframe) => {
+          iframe.src = ""; // This stops the video
+        });
+
+        document.getElementById("project-details").style.display = "none";
+        document.getElementById("overview").style.display = "block";
       }
     </script>
   </body>
